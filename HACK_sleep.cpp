@@ -98,7 +98,7 @@ int main()
           cout << "\n\t  Want to play it again (Y/n)?" << endl;
           cout << "\n--------------------------------------------------------" << endl;
           getline(cin, c);
-          if (c == "n" && (!(c == "y") || !(c == "Y"))){
+          if (c.length() != 0 && c != "y" && c != "Y"){
                break;
           }
      }
