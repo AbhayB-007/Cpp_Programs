@@ -74,7 +74,7 @@ void Hack_Sleep_Func()
           i1 = 0;
           while (i1 < 3)
           {
-               Sleep(250);
+               Sleep(250);                  
                cout << ".";
                i1++;
           }
@@ -105,16 +105,15 @@ void Hack_Sleep_Func()
                break;
      }
 }
+
 void signal_callback_handler(int signum)
 {
-     system("cls");
-     cout.flush();
-     Hack_Sleep_Func();
+     signal(SIGINT, signal_callback_handler);
 }
 
 int main(int argc, char **argv)
 {
-     signal(SIGINT, signal_callback_handler);
-     signal_callback_handler(0);   
+     signal(SIGINT, signal_callback_handler);     
+     Hack_Sleep_Func();
      return 0;
 }
