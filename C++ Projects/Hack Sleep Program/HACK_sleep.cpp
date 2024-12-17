@@ -106,6 +106,7 @@ void Hack_Sleep_Func()
      }
 }
 
+// avoid ctrl + c to quit this program execution while running
 void signal_callback_handler(int signum)
 {
      signal(SIGINT, signal_callback_handler);

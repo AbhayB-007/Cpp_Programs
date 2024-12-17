@@ -31,21 +31,21 @@ int main()
 {
         cout.flush();
         system("cls");
-        STL types_of_stl, types_of_containers;
-        // STL stl_notes("stl notes");
-        // types_of_stl.ContainerNotes();
-        // types_of_containers.Arrays();
-        // types_of_containers.Vector();
-        // types_of_containers.Deque();
-        // types_of_containers.List();
-        // types_of_containers.Forward_List();
-        // types_of_containers.Set();
-        // types_of_containers.Map();
-        // types_of_containers.Multiset();
-        // types_of_containers.Multimap();
-        // types_of_containers.Unordered_Set();
-        // types_of_containers.Stack();
-        // types_of_containers.Queue();
+        STL types_of_stl, types_of_containers; // objects instanciated
+        STL stl_notes("stl notes"); //paramertsed constructor instanciated
+        types_of_stl.ContainerNotes();
+        types_of_containers.Arrays();
+        types_of_containers.Vector();
+        types_of_containers.Deque();
+        types_of_containers.List();
+        types_of_containers.Forward_List();
+        types_of_containers.Set();
+        types_of_containers.Map();
+        types_of_containers.Multiset();
+        types_of_containers.Multimap();
+        types_of_containers.Unordered_Set();
+        types_of_containers.Stack();
+        types_of_containers.Queue();
         types_of_containers.Priority_Queue();
 
         /*
