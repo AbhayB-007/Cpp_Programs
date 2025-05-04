@@ -1,9 +1,10 @@
 #include <bits/stdc++.h>
 #include "Containers.cpp"
+#include "Iterators.cpp"
 
 using namespace std;
 
-class STL : public Containers
+class STL : public Containers, public Iterators
 {
 
 public:
@@ -31,8 +32,8 @@ int main()
 {
         cout.flush();
         system("cls");
-        STL types_of_stl, types_of_containers; // objects instanciated
-        STL stl_notes("stl notes"); //paramertsed constructor instanciated
+        STL types_of_stl, types_of_containers, iterators; // objects instanciated
+        STL stl_notes("stl notes");                       // paramertsed constructor instanciated
         types_of_stl.ContainerNotes();
         types_of_containers.Arrays();
         types_of_containers.Vector();
@@ -47,6 +48,7 @@ int main()
         types_of_containers.Stack();
         types_of_containers.Queue();
         types_of_containers.Priority_Queue();
+        iterators.IteratorNotes();
 
         /*
         class stl : Containers, Algorithms, Itrators
