@@ -1,9 +1,10 @@
 #include <bits/stdc++.h>
 #include "Containers.cpp"
+#include "Iterators.cpp"
 
 using namespace std;
 
-class STL : public Containers
+class STL : public Containers, public Iterators
 {
 
 public:
@@ -18,10 +19,10 @@ public:
                         "\n4). Components of STL are :-"
                         "\n    a). Containers --> stores data & use template classes."
                         "\n    b). Algorithms --> sorting, searching & use template funx."
-                        "\n    c). Itrators   --> i). object point to an element in a container."
+                        "\n    c). Iterators   --> i). object point to an element in a container."
                         "\n                       ii). handles just like pointers."
                         "\n                       iii). connects algorithms with containers."
-                        "\n5). STL is used becoz its a good idea not to reinvent the wheel."
+                        "\n5). STL is used because its a good idea not to reinvent the wheel."
                         "\n6). STL = Containers(object w/c stores data) + Algorithms(procedure to store data) + Iterators(object w/c points to an element of a container)";
         }
 };
@@ -31,8 +32,8 @@ int main()
 {
         cout.flush();
         system("cls");
-        STL types_of_stl, types_of_containers; // objects instanciated
-        STL stl_notes("stl notes"); //paramertsed constructor instanciated
+        STL types_of_stl, types_of_containers, iterators; // objects instantiated
+        STL stl_notes("stl notes");                       // parameterized constructor instantiated
         types_of_stl.ContainerNotes();
         types_of_containers.Arrays();
         types_of_containers.Vector();
@@ -47,6 +48,7 @@ int main()
         types_of_containers.Stack();
         types_of_containers.Queue();
         types_of_containers.Priority_Queue();
+        iterators.IteratorNotes();
 
         /*
         class stl : Containers, Algorithms, Itrators
