@@ -30,7 +30,7 @@ public:
 // Driver Code
 int main()
 {
-        cout.flush();
+        cout.flush()
         system("cls");
         STL types_of_stl, types_of_containers, iterators; // objects instantiated
         STL stl_notes("stl notes");                       // parameterized constructor instantiated
@@ -51,10 +51,10 @@ int main()
         iterators.IteratorNotes();
 
         /*
-        class stl : Containers, Algorithms, Itrators
+        class stl : Containers, Algorithms, Iterators
         class Containers : Sequence ,Adaptors, Associative, Unordered Associative
         class Algorithms : types of algorithms
-        class Itrators : input, output, forward, bidirectional & random-access itrators
+        class Iterators : input, output, forward, bidirectional & random-access iterators
 
         */
 

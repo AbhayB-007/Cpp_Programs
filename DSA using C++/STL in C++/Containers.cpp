@@ -13,13 +13,28 @@ public:
         cout << "\n--------------------------------------//Containers NOTES\\\\----------------------------------------"
                 "\n1). Stores a collection of other objects (its elements)."
                 "\n2). Implemented as class templates."
-                "\n3). Manages the storge space & provides member functions to access them, either directly or through iterators (similar to pointers)."
+                "\n3). Manages the storage space & provides member functions to access them, either directly or through iterators (similar to pointers)."
                 "\n----------------------------------------------------------------------------------------------------"
                 "\nTypes of Containers are :-"
                 "\n    a). Sequence Containers --> Implement data structures that can be accessed sequentially eg :- array, vector, list, forwarded_list & dequeue etc."
                 "\n    b). Containers Adaptors --> Provide a different interface for sequential containers. eg :- queue, priority_queue, stack etc."
                 "\n    c). Associate Containers --> Direct Access eg :- Implement sorted data structures that can be quickly searched (O(log n) complexity). eg :- set, multiset, map & multimap etc."
                 "\n    d). Unordered Associative Containers --> Implement unordered data structures that can be quickly searched eg :- unordered_set, unordered_multiset, unordered_map, unordered_multimap etc.";
+    }
+
+    void Arrays1(array<int, 5> array)
+    {
+        cout << "\n-------------------------------------------------------------------------";
+        cout << "\nmyarray contains :";
+        cout << "\narray size : " << array.size() << endl;
+        for (auto it = array.begin(); it != array.end(); ++it)
+            cout << ' ' << *it;
+        cout << "\noutput of begin() : " << *(array.begin());
+        cout << "\noutput of end() or *(it - 1) : " << *(array.end() - 1);
+        array = {};
+        cout << "\nempty array then output of begin() : " << *(array.begin());
+        cout << "\nempty array then output of end() or *(it - 1) : " << *(array.end() - 1);
+        cout << "\n-------------------------------------------------------------------------";
     }
 
     void Arrays()
@@ -30,7 +45,7 @@ public:
                 "\n3). Array classes are generally more efficient, light-weight and reliable than C-style arrays."
                 "\n----------------------------------------------------------------------------------------------------"
                 "\nMember Functions"
-                "\ni). Itrator Member Functions"
+                "\ni). Iterator Member Functions"
                 "\n\n1). begin() --> ~ Returns an random access iterator pointing to the first element in the array container."
                 "\n                ~ In zero-sized arrays, this function returns the same as array::end, but the returned iterator should not be dereferenced."
                 "\n2). end() --> Returns an iterator pointing to the past-the-end element (element after last element of array) in the array container."
@@ -38,6 +53,7 @@ public:
                 "\n----------------------------------------";
 
         array<int, 5> myarray = {2, 16, 77, 34, 50};
+        Arrays1(myarray);
         cout << "\nmyarray contains :";
         for (auto it = myarray.begin(); it != myarray.end(); ++it)
             cout << ' ' << *it;
@@ -280,7 +296,7 @@ public:
 
         cout << "\n----------------------------------------"
                 "\nMember Function in Vector"
-                "\ni). Itrators --> These member functions work same as we learn in arrays."
+                "\ni). Iterators --> These member functions work same as we learn in arrays."
                 "\n                 eg :- begin(), end(), rbegin(), rend(), cbegin(), cend(), crbegin(), crend()."
                 "\n\nCode Example :- "
                 "\n----------------------------------------";
@@ -309,7 +325,7 @@ public:
                 "\n5). empty() - Returns whether the container is empty."
                 "\n6). shrink_to_fit() - Reduces the capacity of the container to fit its size and destroys all elements beyond the capacity."
                 "\n7). reserve() - Requests that the vector capacity be at least enough to contain n elements."
-                "\n                It helps in reducung initialization time for vector."
+                "\n                It helps in reducing initialization time for vector."
                 "\n\nCode Example :- "
                 "\n----------------------------------------";
 
