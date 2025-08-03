@@ -16,9 +16,9 @@ class abhay
         }
         void display()
         {
-            cout << "The vaue of a is " << a << endl;
-            cout << "The vaue of b is " << b << endl;
-            cout << "The vaue of c is " << c << endl;
+            cout << "The value of a is " << a << endl;
+            cout << "The value of b is " << b << endl;
+            cout << "The value of c is " << c << endl;
         }
 };
 
