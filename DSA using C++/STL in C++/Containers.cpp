@@ -47,7 +47,7 @@ public:
                 "\nMember Functions"
                 "\ni). Iterator Member Functions"
                 "\n\n1). begin() --> ~ Returns an random access iterator pointing to the first element in the array container."
-                "\n                ~ In zero-sized arrays, this function returns the same as array::end, but the returned iterator should not be dereferenced."
+                "\n                  ~ In zero-sized arrays, this function returns the same as array::end, but the returned iterator should not be dereferenced."
                 "\n2). end() --> Returns an iterator pointing to the past-the-end element (element after last element of array) in the array container."
                 "\n\nCode Example :- "
                 "\n----------------------------------------";
@@ -208,17 +208,17 @@ public:
         for (int &x : list1)
             cout << ' ' << x;
 
-        cout << "list2:";
+        cout << "\nlist2:";
         for (int &x : list2)
             cout << ' ' << x;
 
         list1.swap(list2);
-        cout << "\nswap list1 & list2 using swap()" << endl;
+        cout << "\nlist1 & list2 after using swap()" << endl;
         cout << "list1:";
         for (int &x : list1)
             cout << ' ' << x;
 
-        cout << "list2:";
+        cout << "\nlist2:";
         for (int &x : list2)
             cout << ' ' << x;
 
